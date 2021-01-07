@@ -1,0 +1,93 @@
+//variables
+
+$paarsblauw: #686de0;
+$grijs: #c3cfe2;
+$wit: #fff;
+
+//start
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+	background-color: $grijs;
+	display: flex;
+	flex-direction: column;
+}
+
+.kaart {
+	height: 550px;
+	width: 400px;
+	margin: 40px auto;
+	background-color: $wit;
+	border-radius: 30px;
+	box-shadow: 0px 10px 7px 0px rgba($color: #000000, $alpha: 0.5);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	&__main {
+		background-color: #fff;
+	}
+	&__text {
+		padding: 50px 40px;
+		font-weight: lighter;
+		font-stretch: ultra-condensed;
+		line-height: 1.4em;
+	}
+}
+.footer {
+	background-color: $paarsblauw;
+	width: 100%;
+	height: 30%;
+	position: relative;
+	bottom: -25px;
+	&__foto {
+		width: 150px;
+		height: auto;
+		position: absolute;
+		top: -75px;
+		right: 125px;
+	}
+	&__naam {
+		text-align: center;
+		color: #fff;
+		margin-top: 75px;
+		font-size: 1.4em;
+		margin-bottom: 0;
+	}
+	&__website {
+		text-align: center;
+		color: #c3cfe2;
+		font-size: 1.2em;
+		margin-top: 5px;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.kaart {
+		height: 1100px;
+		width: 800px;
+		box-shadow: 0px 20px 14px 0px rgba($color: #000000, $alpha: 0.5);
+		&__text {
+			padding: 100px 80px;
+			font-size: 3em;
+		}
+	}
+	.footer {
+		&__foto {
+			width: 300px;
+			top: -150px;
+			right: 250px;
+		}
+		&__naam {
+			margin-top: 150px;
+			font-size: 2.8em;
+		}
+		&__website {
+			font-size: 2.4em;
+		}
+	}
+}

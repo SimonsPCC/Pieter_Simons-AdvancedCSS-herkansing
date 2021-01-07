@@ -1,0 +1,79 @@
+//variables
+
+$paarsblauw: #686de0;
+$grijs: #c3cfe2;
+$wit: #fff;
+
+//mixins
+
+@mixin hovereffect {
+	animation-timing-function: ease-in-out;
+	transition: transform 0.5s;
+	&:hover {
+		transform: translateX(-170px);
+		animation-timing-function: ease-in-out;
+		transition: transform 0.5s;
+	}
+}
+
+//start
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+	box-sizing: border-box;
+
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+	background-color: $grijs;
+	margin: 0;
+}
+
+.social-media {
+	margin: 0;
+	width: 300px;
+	position: fixed;
+	overflow-x: visible;
+	right: -240px;
+	top: 50%;
+
+	&--blog {
+		background-color: #e17b77;
+		@include hovereffect();
+	}
+
+	&--twitter {
+		background-color: #00aced;
+		@include hovereffect();
+	}
+
+	&--linkedin {
+		background-color: #007bb6;
+		@include hovereffect();
+	}
+	&--facebook {
+		background-color: #3b5998;
+		@include hovereffect();
+	}
+	&--github {
+		background-color: #333;
+		@include hovereffect();
+	}
+
+	& a {
+		color: $wit;
+		float: right;
+		position: relative;
+		top: 15px;
+		right: 90px;
+	}
+
+	& i {
+		font-size: 2em;
+		color: white;
+		margin: 10px 15px;
+		text-align: center;
+	}
+}

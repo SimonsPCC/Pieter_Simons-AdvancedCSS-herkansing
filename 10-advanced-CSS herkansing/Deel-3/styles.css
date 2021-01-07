@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  background-color: #c3cfe2;
+  margin: 0;
+}
+
+.social-media {
+  margin: 0;
+  width: 300px;
+  position: fixed;
+  overflow-x: visible;
+  right: -240px;
+  top: 50%;
+}
+
+.social-media--blog {
+  background-color: #e17b77;
+  animation-timing-function: ease-in-out;
+  transition: transform 0.5s;
+}
+
+.social-media--blog:hover {
+  transform: translateX(-170px);
+  animation-timing-function: ease-in-out;
+  transition: transform 0.5s;
+}
+
+.social-media--twitter {
+  background-color: #00aced;
+  animation-timing-function: ease-in-out;
+  transition: transform 0.5s;
+}
+
+.social-media--twitter:hover {
+  transform: translateX(-170px);
+  animation-timing-function: ease-in-out;
+  transition: transform 0.5s;
+}
+
+.social-media--linkedin {
+  background-color: #007bb6;
+  animation-timing-function: ease-in-out;
+  transition: transform 0.5s;
+}
+
+.social-media--linkedin:hover {
+  transform: translateX(-170px);
+  animation-timing-function: ease-in-out;
+  transition: transform 0.5s;
+}
+
+.social-media--facebook {
+  background-color: #3b5998;
+  animation-timing-function: ease-in-out;
+  transition: transform 0.5s;
+}
+
+.social-media--facebook:hover {
+  transform: translateX(-170px);
+  animation-timing-function: ease-in-out;
+  transition: transform 0.5s;
+}
+
+.social-media--github {
+  background-color: #333;
+  animation-timing-function: ease-in-out;
+  transition: transform 0.5s;
+}
+
+.social-media--github:hover {
+  transform: translateX(-170px);
+  animation-timing-function: ease-in-out;
+  transition: transform 0.5s;
+}
+
+.social-media a {
+  color: #fff;
+  float: right;
+  position: relative;
+  top: 15px;
+  right: 90px;
+}
+
+.social-media i {
+  font-size: 2em;
+  color: white;
+  margin: 10px 15px;
+  text-align: center;
+}
